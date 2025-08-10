@@ -1,0 +1,54 @@
+env:
+  TERM: xterm-256color
+
+window:
+  title: Alacritty
+  decorations: none
+  dynamic_padding: false
+  padding:
+    x: 5
+    y: 5
+
+scrolling:
+  history: 1000
+  multiplier: 3
+
+font:
+  normal:
+    family: "JetBrains Mono Nerd Font"
+    style: Bold
+  bold:
+    family: "JetBrains Mono Nerd Font"
+    style: ExtraBold
+  italic:
+    family: "JetBrains Mono"
+    style: Bold Italic
+  size: 7
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#161416'
+    foreground: '#cfd6d6'
+  normal:
+    black:   '#161416'
+    red:     '#995a5a'
+    green:   '#778967'
+    yellow:  '#c1c485'
+    blue:    '#5f79aa'
+    magenta: '#9d6fa5'
+    cyan:    '#cfd6d6'
+    white:   '#d5c4a1'
+  bright:
+    black:   '#3a3a34'
+    red:     '#c46c5a'
+    green:   '#8a8d55'
+    yellow:  '#d6a94a'
+    blue:    '#7c8c92'
+    magenta: '#a3828f'
+    cyan:    '#7c8e7c'
+    white:   '#f0e8d0'
+
+bell:
+  audible: false

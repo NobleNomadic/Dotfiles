@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # === Configuration ===
-THEMES_DIR="$HOME/.themes"
+THEMES_DIR="$HOME/.quickthemes"
 STATE_FILE="$THEMES_DIR/state.txt"
 CONFIG_HELIX="$HOME/.config/helix/config.toml"
 CONFIG_ALACRITTY="$HOME/.config/alacritty/alacritty.yml"
