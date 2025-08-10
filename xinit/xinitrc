@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Set clock in corner of bar
+while true; do
+  xsetroot -name "$(date +"%F %R")"
+  sleep 1m
+done &
+
+# Start picom in background
+picom --config ~/.config/picom/picom.conf &
+
+# Setup monitors
+xrandr --output HDMI-A-0 --auto --right-of eDP --output eDP --auto
+
+# Set theme
+~/.config/scripts/switchTheme.sh
+
+# Start DWM (exec replaces the script with dwm)
+exec dwm

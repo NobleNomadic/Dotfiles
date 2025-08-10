@@ -7,8 +7,9 @@ Compile either dwm or dmenu by moving to the folder in a terminal, and running
 sudo make clean install
 ```
 
-## Fish and Picom
+## Fish, Picom, xinitrc
 Simply put the configuration files in this repo into their locations in the .config folder to use them.
+Put xinitrc in your home folder as `~/.xinitrc`
 
 ## QuickThemes
 The bash script [switchTheme.sh](quickthemes/switchTheme.sh) will use the folder `~/.quickthemes` to automatically set your wallpaper, helix configuration, and alacritty config.
