@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Start picom in background
+picom --config ~/.config/picom/picom.conf &
+
+# Start DWM blocks
+./suckless/dwmblocks/dwmblocks &
+# Ensure weather is running properly
+sleep 1
+kill -44 $(pidof dwmblocks)
+
+# Setup monitors
+xrandr --output HDMI-A-0 --auto --right-of eDP --output eDP --auto
+
+# Set background
+feh --bg-scale /home/nomad/Pictures/MountainTunnel.jpg
+
+# Start DWM (exec replaces the script with dwm)
+exec dwm
